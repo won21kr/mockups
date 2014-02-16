@@ -1,0 +1,280 @@
+@font-face {
+	font-family: "guardian_egypt";
+	font-weight: normal;
+	src: url("fonts/guardian_egypt.woff") format("woff");
+}
+@font-face {
+	font-family: "guardian_egypt";
+	font-weight: bold;
+	src: url("fonts/guardian_egypt_bold.woff") format("woff");
+}
+
+body {
+	background: #efefeb;
+	color: #333;
+	font: 14px "Arial", "Helvetica", sans-serif;
+	margin: 0;
+	min-width: 1030px;
+}
+a, img {
+	border: none;
+	color: inherit;
+	text-decoration: none;
+}
+ul, li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+h2 {
+	color: #333;
+	font: bold 32px "guardian_egypt", "Georgia", serif;
+	line-height: 1em;
+	margin: 0;
+}
+h4 {
+	color: #888;
+	font: 18px "guardian_egypt", "Georgia", serif;
+	line-height: 1em;
+	margin: 0;
+}
+.wrap {
+	margin: 0 auto;
+	width: 980px;
+}
+#header {
+	border-bottom: 1px solid #d2d2d2;
+	height: 62px;
+	overflow: hidden;
+	padding-top: 32px;
+	width: 100%;
+}
+#header .logo {
+	margin: -5px 14px 0 0;
+	float: left;
+}
+#header .search {
+	float: left;
+	margin-left: 130px;
+}
+#header .search input {
+	border: 1px solid #d2d2d2;
+	border-radius: 5px 0 0 5px;
+	float: left;
+	font-size: 16px;
+	margin: 0;
+	padding: 7px 10px;
+	width: 380px;
+}
+#header .search button {
+	background: #f2f3f3;
+	border: 1px solid;
+	border-left: 0;
+	border-color: #d8d5d2 #cfcbc8 #c4c0bc;
+	border-radius: 0 5px 5px 0;
+	color: #7d7773;
+	float: left;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 0;
+	padding: 7px 15px 8px;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+}
+#header .user-links {
+	color: #666;
+	float: right;
+	padding: 7px 0 7px 10px;
+}
+#header .user-links li {
+	display: inline-block;
+	margin-right: 12px;
+}
+#header .user-links li + li {
+	border-left: 1px solid #b0b0af;
+	margin-right: 0;
+	padding-left: 12px;
+}
+#header .user-links .cart span {
+	background: #78c042;
+	color: #fff;
+	font-size: 12px;
+	line-height: 10px;
+	margin-left: 8px;
+	padding: 2px 5px;
+}
+#nav {
+	background: #fff;
+	border-bottom: 1px solid #d2d2d2;
+}
+#nav li {
+	display: inline-block;
+}
+#nav li:first-child {
+	margin-left: -25px;
+}
+#nav li a {
+	color: #0192b5;
+	display: block;
+	font-weight: bold;
+	padding: 20px 25px;
+}
+#nav li a:hover {
+	background: #f5f5f1;
+}
+#splash {
+	background: #ddd;
+	overflow: hidden;
+}
+#splash header {
+	height: 300px;
+}
+#splash h1 {
+	color: #fff;
+	font: 42px "guardian_egypt", "Georgia", serif;
+	margin: 0;
+	padding-top: 100px;
+	text-shadow: 0 1px 1px rgba(0, 0, 0, .2);
+	width: 560px;
+}
+#splash .overlay {
+	background: #000;
+	background-color: rgba(0, 0, 0, .4);
+	height: 100px;
+}
+#splash .overlay .avatar {
+	float: left;
+	margin-top: 20px;
+	margin-right: 10px;
+}
+#splash .overlay .avatar img {
+	border-radius: 60px;
+}
+#splash .overlay .info {
+	color: #fff;
+	float: left;
+	font: bold 14px "guardian_egypt", "Georgia", serif;
+	line-height: 21px;
+	margin-top: 30px;
+}
+#splash .overlay .info em {
+	font-weight: normal;
+	padding-right: 3px;
+}
+#splash .overlay .thumbnails {
+	float: right;
+	margin-top: 9px;
+}
+#splash .overlay .thumbnails li {
+	background: #000;
+	border: 3px solid #fff;
+	border-radius: 3px;
+	float: left;
+}
+#splash .overlay .thumbnails li + li {
+	margin-left: 8px;
+}
+#splash .overlay .thumbnails img {
+	display: block;
+}
+#splash .overlay .thumbnails a:hover img {
+	opacity: .92;
+}
+#splash .overlay .thumbnails .count {
+	background: #fff;
+	color: #999;
+	font-size: 12px;
+	text-align: center;
+}
+#splash .overlay .thumbnails .count a {
+	display: block;
+	height: 75px;
+	width: 75px;
+}
+#splash .overlay .thumbnails .count a:hover {
+	background: #cce9f0;
+}
+#splash .overlay .thumbnails .count span {
+	color: #0192b5;
+	display: block;
+	padding-top: 16px;
+	font-size: 24px;
+}
+#favs {
+	color: #666;
+	font-size: 12px;
+	overflow: hidden;
+	padding: 60px 0;
+}
+#favs hgroup {
+	text-align: center;
+}
+#favs hgroup h4 {
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+#favs li {
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+	float: left;
+}
+#favs li + li {
+	margin-left: 20px;
+}
+#favs img {
+	display: block;
+}
+#favs .product {
+	background: #fff;
+	border: 4px solid #fff;
+	border-bottom: 0;
+	border-radius: 3px 3px 0 0;
+	display: block;
+	line-height: 16px;
+	overflow: hidden;
+}
+#favs .product:hover .title {
+	text-decoration: underline;
+}
+#favs .product .title {
+	float: left;
+	line-height: 18px;
+	padding: 7px 6px 5px;
+	text-overflow: ellipsis;
+	width: 210px;
+}
+#favs .product .price {
+	color: #78c042;
+	float: right;
+	font-size: 13px;
+	padding: 6px;
+}
+#favs .product .price small {
+	font-size: 10px;
+}
+#favs .about {
+	background: #fbfbf8;
+	border-top: 1px solid #ddd;
+	border-radius: 0 0 3px 3px;
+	display: block;
+	overflow: hidden;
+	padding: 15px 8px;
+}
+#favs .about:hover {
+	background: #e5f4f7;
+}
+#favs .about .avatar {
+	float: left;
+	margin-right: 10px;
+}
+#favs .about .avatar img {
+	border-radius: 50px;
+}
+#favs .about .info {
+	color: #333;
+	float: left;
+	font: bold 14px "guardian_egypt", "Georgia", serif;
+	margin-top: 6px;
+}
+#favs .about .info em {
+	font-weight: normal;
+	padding-right: 2px;
+}
