@@ -1,12 +1,14 @@
 @font-face {
 	font-family: "guardian_egypt";
 	font-weight: normal;
-	src: url("fonts/guardian_egypt.woff") format("woff");
+	src: url("fonts/guardian_egypt.woff")
+		format("woff");
 }
 @font-face {
 	font-family: "guardian_egypt";
 	font-weight: bold;
-	src: url("fonts/guardian_egypt_bold.woff") format("woff");
+	src: url("fonts/guardian_egypt_bold.woff")
+		format("woff");
 }
 
 body {
@@ -28,7 +30,15 @@ ul, li {
 }
 h2 {
 	color: #333;
-	font: bold 32px "guardian_egypt", "Georgia", serif;
+	font: 32px "guardian_egypt", "Georgia", serif;
+	font-weight: bold;
+	line-height: 1em;
+	margin: 0;
+}
+h3 {
+	color: #333;
+	font: 24px "guardian_egypt", "Georgia", serif;
+	font-weight: bold;
 	line-height: 1em;
 	margin: 0;
 }
@@ -199,18 +209,65 @@ h4 {
 	padding-top: 16px;
 	font-size: 24px;
 }
+#marketplace {
+	background: #fff;
+	overflow: hidden;
+	padding: 50px 0 60px;
+}
+#marketplace h2 {
+	margin-bottom: 32px;
+	text-align: center;
+}
+#marketplace .categories li {
+	background: #fff;
+	border: 1px solid #e4e4e2;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+	float: left;
+	padding: 1px;
+	width: 306px;
+}
+#marketplace .categories li + li {
+	margin-left: 25px;
+}
+#marketplace .categories a:hover .title {
+	text-decoration: underline;
+}
+#marketplace .categories .thumbnails {
+	overflow: hidden;
+}
+#marketplace .categories .thumbnails img {
+	border: 1px solid #fff;
+	float: left;
+}
+#marketplace .categories .bottom {
+	overflow: hidden;
+	padding: 12px;
+}
+#marketplace .categories .title {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 22px;
+}
+#marketplace .categories .arrow {
+	background: url(img/arrow.png) no-repeat;
+	float: right;
+	height: 22px;
+	width: 22px;
+}
 #favs {
 	color: #666;
 	font-size: 12px;
 	overflow: hidden;
-	padding: 60px 0;
+	padding: 50px 0 60px;
 }
 #favs hgroup {
+	margin-bottom: 20px;
 	text-align: center;
 }
 #favs hgroup h4 {
 	line-height: 40px;
-	margin-bottom: 20px;
 }
 #favs li {
 	box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
@@ -277,4 +334,175 @@ h4 {
 #favs .about .info em {
 	font-weight: normal;
 	padding-right: 2px;
+}
+#inspiration {
+	background: #fff;
+	padding: 50px 0 60px;
+}
+#inspiration hgroup {
+	margin-bottom: 20px;
+	text-align: center;
+}
+#inspiration hgroup h4 {
+	line-height: 40px;
+}
+#inspiration .favs {
+	height: 240px;
+}
+#inspiration .favs a:hover .title {
+	text-decoration: underline;
+}
+#inspiration .favs li {
+	background: #fff;
+	border: 1px solid #e4e4e2;
+	border-radius: 3px;
+	box-shadow: 0 0 2px 0 rgba(0, 0, 0, .1);
+	float: left;
+	margin-left: 1px;
+	position: relative;
+	width: 226px;
+}
+#inspiration .favs li:hover .avatar {
+	top: -26px;
+}
+#inspiration .favs li:hover .avatar span {
+	opacity: 1;
+}
+#inspiration .favs li + li {
+	margin-left: 22px;
+}
+#inspiration .favs .avatar {
+	position: absolute;
+	top: -13px;
+	left: 8px;
+	transition: top .2s;
+}
+#inspiration .favs .avatar span {
+	color: #666;
+	float: left;
+	font-size: 12px; 
+	margin: 6px 0 0 10px; 
+	opacity: 0;
+	transition: opacity .2s;
+}
+#inspiration .favs .avatar span a {
+	color: #0192b5;
+	font-weight: bold;
+}
+#inspiration .favs .avatar span a:hover {
+	text-decoration: underline;
+}
+#inspiration .favs .avatar .image {
+	background: #fff;	
+	border-radius: 50%;
+	float: left;
+	padding: 2px;
+}
+#inspiration .favs .avatar .image img {
+	border-radius: 50%;
+	display: block;
+}
+#inspiration .favs .thumbnails img {
+	float: left;
+	margin: 0 2px 2px 0;
+}
+#inspiration .favs .thumbnails img:nth-child(even) {
+	margin-right: 0;
+}
+#inspiration .favs .bottom {
+	overflow: hidden;
+	padding: 10px 12px;
+}
+#inspiration .favs .bottom .arrow {
+	background: url(img/arrow.png) no-repeat;
+	float: right;
+	height: 22px;
+	margin: 6px -2px 0 0;
+	width: 22px;
+}
+#inspiration .favs .bottom .title {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+}
+#inspiration .favs .bottom .title span {
+	clear: both;
+	color: #999;
+	float: left;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 18px;
+	text-decoration: none;
+}
+#inspiration .browse {
+	background: #e5f4f7;
+	border: 1px solid #cce9f0;
+	border-radius: 5px;
+	margin-top: 30px;
+	padding: 25px 0 30px;
+	text-align: center;
+}
+#inspiration .browse:hover {
+	background: #cce9f0;
+	border-color: #99d3e1;
+}
+#inspiration .browse:hover .button {
+	background: #3f98bb;
+}
+#inspiration .browse h3 {
+	margin-bottom: 20px;
+}
+#inspiration .browse .button {
+	background: #4fa9c6;
+	border: 1px solid;
+	border-color: #54acc7 #4ca0ba #398a9d;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 7px 15px 8px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+}
+#trust {
+	padding: 50px 0 60px;
+	overflow: hidden;
+}
+#trust h3 {
+	font-size: 26px;
+	line-height: 32px;
+	margin-bottom: 12px;
+	text-shadow: 0 2px 1px rgba(255, 255, 255, .8);
+}
+#trust h4 {
+	line-height: 28px;
+}
+#trust img {
+	margin-bottom: 20px;
+}
+#trust .item {
+	float: left;
+	text-align: center;
+	width: 308px;
+}
+#trust .item + .item {
+	margin-left: 28px;
+}
+#footer {
+	border-top: 1px solid #d2d2d2;
+	color: #666;
+	font-size: 11px;
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding-top: 8px;
+}
+#footer .copyright {
+	float: left;
+}
+#footer .links {
+	float: right;
+}
+#footer .links li {
+	display: inline;
+	margin-left: 12px;
 }
