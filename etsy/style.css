@@ -28,25 +28,27 @@ ul, li {
 	margin: 0;
 	padding: 0;
 }
-h2 {
-	color: #333;
-	font: 32px "guardian_egypt", "Georgia", serif;
-	font-weight: bold;
+h1,
+h2,
+h3,
+h4 {
+	font-family: "guardian_egypt", Georgia, serif;
 	line-height: 1em;
 	margin: 0;
+}
+h2 {
+	color: #333;
+	font-size: 32px;
+	font-weight: bold;
 }
 h3 {
 	color: #333;
-	font: 24px "guardian_egypt", "Georgia", serif;
+	font-size: 24px;
 	font-weight: bold;
-	line-height: 1em;
-	margin: 0;
 }
 h4 {
 	color: #888;
-	font: 18px "guardian_egypt", "Georgia", serif;
-	line-height: 1em;
-	margin: 0;
+	font-size: 18px;
 }
 .wrap {
 	margin: 0 auto;
@@ -151,59 +153,59 @@ h4 {
 	background-color: rgba(0, 0, 0, .4);
 	height: 100px;
 }
-#splash .overlay .avatar {
+#splash .avatar {
 	float: left;
 	margin-top: 20px;
 	margin-right: 10px;
 }
-#splash .overlay .avatar img {
+#splash .avatar img {
 	border-radius: 60px;
 }
-#splash .overlay .info {
+#splash .info {
 	color: #fff;
 	float: left;
 	font: bold 14px "guardian_egypt", "Georgia", serif;
 	line-height: 21px;
 	margin-top: 30px;
 }
-#splash .overlay .info em {
+#splash .info em {
 	font-weight: normal;
 	padding-right: 3px;
 }
-#splash .overlay .thumbnails {
+#splash .thumbnails {
 	float: right;
 	margin-top: 9px;
 }
-#splash .overlay .thumbnails li {
+#splash .thumbnails li {
 	background: #000;
 	border: 3px solid #fff;
 	border-radius: 3px;
 	float: left;
 }
-#splash .overlay .thumbnails li + li {
+#splash .thumbnails li + li {
 	margin-left: 8px;
 }
-#splash .overlay .thumbnails img {
+#splash .thumbnails img {
 	display: block;
 }
-#splash .overlay .thumbnails a:hover img {
+#splash .thumbnails a:hover img {
 	opacity: .92;
 }
-#splash .overlay .thumbnails .count {
+#splash .thumbnails .count {
 	background: #fff;
 	color: #999;
 	font-size: 12px;
 	text-align: center;
 }
-#splash .overlay .thumbnails .count a {
+#splash .thumbnails .count a {
 	display: block;
 	height: 75px;
 	width: 75px;
 }
-#splash .overlay .thumbnails .count a:hover {
+#splash .thumbnails .count a:hover {
 	background: #cce9f0;
 }
-#splash .overlay .thumbnails .count span {
+#splash .thumbnails .count span {
 	color: #0192b5;
 	display: block;
 	padding-top: 16px;
@@ -218,7 +220,10 @@ h4 {
 	margin-bottom: 32px;
 	text-align: center;
 }
-#marketplace .categories li {
+#marketplace a:hover .title {
+	text-decoration: underline;
+}
+#marketplace li {
 	background: #fff;
 	border: 1px solid #e4e4e2;
 	border-radius: 3px;
@@ -227,30 +232,27 @@ h4 {
 	padding: 1px;
 	width: 306px;
 }
-#marketplace .categories li + li {
+#marketplace li + li {
 	margin-left: 25px;
 }
-#marketplace .categories a:hover .title {
-	text-decoration: underline;
-}
-#marketplace .categories .thumbnails {
+#marketplace .thumbnails {
 	overflow: hidden;
 }
-#marketplace .categories .thumbnails img {
+#marketplace .thumbnails img {
 	border: 1px solid #fff;
 	float: left;
 }
-#marketplace .categories .bottom {
+#marketplace .bottom {
 	overflow: hidden;
 	padding: 12px;
 }
-#marketplace .categories .title {
+#marketplace  .title {
 	float: left;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 22px;
 }
-#marketplace .categories .arrow {
+#marketplace .arrow {
 	background: url(img/arrow.png) no-repeat;
 	float: right;
 	height: 22px;
@@ -291,20 +293,20 @@ h4 {
 #favs .product:hover .title {
 	text-decoration: underline;
 }
-#favs .product .title {
+#favs .title {
 	float: left;
 	line-height: 18px;
 	padding: 7px 6px 5px;
 	text-overflow: ellipsis;
 	width: 210px;
 }
-#favs .product .price {
+#favs .price {
 	color: #78c042;
 	float: right;
 	font-size: 13px;
 	padding: 6px;
 }
-#favs .product .price small {
+#favs .price small {
 	font-size: 10px;
 }
 #favs .about {
@@ -318,26 +320,29 @@ h4 {
 #favs .about:hover {
 	background: #e5f4f7;
 }
-#favs .about .avatar {
+#favs .avatar {
 	float: left;
 	margin-right: 10px;
 }
-#favs .about .avatar img {
+#favs .avatar img {
 	border-radius: 50px;
 }
-#favs .about .info {
+#favs .info {
 	color: #333;
 	float: left;
 	font: bold 14px "guardian_egypt", "Georgia", serif;
 	margin-top: 6px;
 }
-#favs .about .info em {
+#favs .info em {
 	font-weight: normal;
 	padding-right: 2px;
 }
 #inspiration {
 	background: #fff;
 	padding: 50px 0 60px;
+}
+#inspiration a:hover .title {
+	text-decoration: underline;
 }
 #inspiration hgroup {
 	margin-bottom: 20px;
@@ -346,13 +351,7 @@ h4 {
 #inspiration hgroup h4 {
 	line-height: 40px;
 }
-#inspiration .favs {
-	height: 240px;
-}
-#inspiration .favs a:hover .title {
-	text-decoration: underline;
-}
-#inspiration .favs li {
+#inspiration li {
 	background: #fff;
 	border: 1px solid #e4e4e2;
 	border-radius: 3px;
@@ -362,22 +361,25 @@ h4 {
 	position: relative;
 	width: 226px;
 }
-#inspiration .favs li:hover .avatar {
+#inspiration li:hover .avatar {
 	top: -26px;
 }
-#inspiration .favs li:hover .avatar span {
+#inspiration li:hover .avatar span {
 	opacity: 1;
 }
-#inspiration .favs li + li {
+#inspiration li + li {
 	margin-left: 22px;
 }
-#inspiration .favs .avatar {
+#inspiration .favs {
+	height: 240px;
+}
+#inspiration .avatar {
 	position: absolute;
 	top: -13px;
 	left: 8px;
 	transition: top .2s;
 }
-#inspiration .favs .avatar span {
+#inspiration .avatar span {
 	color: #666;
 	float: left;
 	font-size: 12px; 
@@ -385,47 +387,47 @@ h4 {
 	opacity: 0;
 	transition: opacity .2s;
 }
-#inspiration .favs .avatar span a {
+#inspiration .avatar span a {
 	color: #0192b5;
 	font-weight: bold;
 }
-#inspiration .favs .avatar span a:hover {
+#inspiration .avatar span a:hover {
 	text-decoration: underline;
 }
-#inspiration .favs .avatar .image {
+#inspiration .image {
 	background: #fff;	
 	border-radius: 50%;
 	float: left;
 	padding: 2px;
 }
-#inspiration .favs .avatar .image img {
+#inspiration .image img {
 	border-radius: 50%;
 	display: block;
 }
-#inspiration .favs .thumbnails img {
+#inspiration .thumbnails img {
 	float: left;
 	margin: 0 2px 2px 0;
 }
-#inspiration .favs .thumbnails img:nth-child(even) {
+#inspiration .thumbnails img:nth-child(even) {
 	margin-right: 0;
 }
-#inspiration .favs .bottom {
+#inspiration .bottom {
 	overflow: hidden;
 	padding: 10px 12px;
 }
-#inspiration .favs .bottom .arrow {
+#inspiration .arrow {
 	background: url(img/arrow.png) no-repeat;
 	float: right;
 	height: 22px;
 	margin: 6px -2px 0 0;
 	width: 22px;
 }
-#inspiration .favs .bottom .title {
+#inspiration .title {
 	float: left;
 	font-size: 14px;
 	font-weight: bold;
 }
-#inspiration .favs .bottom .title span {
+#inspiration .title span {
 	clear: both;
 	color: #999;
 	float: left;
@@ -452,7 +454,7 @@ h4 {
 #inspiration .browse h3 {
 	margin-bottom: 20px;
 }
-#inspiration .browse .button {
+#inspiration .button {
 	background: #4fa9c6;
 	border: 1px solid;
 	border-color: #54acc7 #4ca0ba #398a9d;
@@ -495,6 +497,9 @@ h4 {
 	margin-bottom: 20px;
 	overflow: hidden;
 	padding-top: 8px;
+}
+#footer a:hover {
+	text-decoration: underline;
 }
 #footer .copyright {
 	float: left;
