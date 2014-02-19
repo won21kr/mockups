@@ -39,20 +39,31 @@ h4 {
 h2 {
 	color: #333;
 	font-size: 32px;
-	font-weight: bold;
 }
 h3 {
 	color: #333;
 	font-size: 24px;
-	font-weight: bold;
 }
 h4 {
 	color: #888;
 	font-size: 18px;
+	font-weight: normal;
 }
 .wrap {
 	margin: 0 auto;
 	width: 980px;
+}
+.button {
+	background: #4fa9c6;
+	border: 1px solid;
+	border-color: #54acc7 #4ca0ba #398a9d;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: bold;
+	padding: 7px 15px 8px;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
 }
 #header {
 	border-bottom: 1px solid #d2d2d2;
@@ -61,15 +72,11 @@ h4 {
 	padding-top: 32px;
 	width: 100%;
 }
-#header .logo {
-	margin: -5px 14px 0 0;
-	float: left;
-}
-#header .search {
+#header form {
 	float: left;
 	margin-left: 130px;
 }
-#header .search input {
+#header form input {
 	border: 1px solid #d2d2d2;
 	border-radius: 5px 0 0 5px;
 	float: left;
@@ -78,7 +85,7 @@ h4 {
 	padding: 7px 10px;
 	width: 380px;
 }
-#header .search button {
+#header form button {
 	background: #f2f3f3;
 	border: 1px solid;
 	border-left: 0;
@@ -91,6 +98,10 @@ h4 {
 	margin: 0;
 	padding: 7px 15px 8px;
 	text-shadow: 0 1px 0 rgba(255, 255, 255, .8);
+}
+#header .logo {
+	margin: -5px 14px 0 0;
+	float: left;
 }
 #header .user-links {
 	color: #666;
@@ -276,7 +287,7 @@ h4 {
 	float: left;
 }
 #favs li + li {
-	margin-left: 20px;
+	margin-left: 30px;
 }
 #favs img {
 	display: block;
@@ -454,18 +465,6 @@ h4 {
 #inspiration .browse h3 {
 	margin-bottom: 20px;
 }
-#inspiration .button {
-	background: #4fa9c6;
-	border: 1px solid;
-	border-color: #54acc7 #4ca0ba #398a9d;
-	border-radius: 3px;
-	color: #fff;
-	display: inline-block;
-	font-size: 15px;
-	font-weight: bold;
-	padding: 7px 15px 8px;
-	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
-}
 #trust {
 	padding: 50px 0 60px;
 	overflow: hidden;
@@ -489,6 +488,43 @@ h4 {
 }
 #trust .item + .item {
 	margin-left: 28px;
+}
+#subscribe {
+	background-color: #d7d7d1;
+	background-image: url(img/texture.png), url(img/subscribe_ribbon.png);
+	background-repeat: repeat, no-repeat;
+	background-position: 0 0, 0 center;
+	border: 1px solid #d2d2d2;
+	border-radius: 3px;
+	box-shadow: inset 0 0 10px rgba(0, 0, 0, .1);
+	margin-bottom: 60px;
+	padding: 30px 0;
+}
+#subscribe h4 {
+	color: #333;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 28px;
+	margin-bottom: 8px;
+	text-align: center;
+	text-shadow: 0 1px 0 #fff;
+}
+#subscribe form {
+	text-align: center;	
+}
+#subscribe form input[type=text] {
+	border: 1px solid;
+	border-color: #b3b3b3 #ccc #ccc #b3b3b3;
+	border-radius: 5px;
+	font-size: 16px;
+	margin: 0;
+	margin-right: 10px;
+	padding: 7px 10px;
+	width: 250px;
+}
+#subscribe form .button {
+	margin: 0;
+	padding-bottom: 7px;
 }
 #footer {
 	border-top: 1px solid #d2d2d2;
