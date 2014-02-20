@@ -145,7 +145,7 @@ h4 {
 	background: #f5f5f1;
 }
 #splash {
-	background: #ddd url(placeholders/splash/splash_1.jpg) center center;
+	background: #ddd url(img/splash.jpg) center center;
 	background-size: cover;
 	overflow: hidden;
 }
