@@ -4,3 +4,4 @@ HTML5/CSS3 knowledge up to date.
 ### Preview
 
 * Etsy: http://erming.github.io/mockups/etsy/
+* Kickstarter: http://erming.github.io/mockups/kickstarter/
