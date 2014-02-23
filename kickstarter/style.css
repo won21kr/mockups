@@ -44,6 +44,16 @@ li {
 	overflow: hidden;
 	width: 940px;
 }
+.progress {
+	background: #d0d5cb;
+	border-radius: 4px;
+	height: 8px;
+}
+.progress .done {
+	background: #76cc1e;
+	border-radius: 4px;
+	height: 8px;
+}
 #header {
 	background: #fff;
 	overflow: hidden;
@@ -157,8 +167,8 @@ li {
 	margin-top: 1.2em;
 }
 #staff-picks .stats {
-	position: absolute;
 	bottom: 0;
+	position: absolute;
 }
 #staff-picks .progress {
 	background: #d0d5cb;
@@ -216,6 +226,102 @@ li {
 #staff-picks .categories .selected {
 	border-bottom-color: #76cc1e;
 	color: #76cc1e; 
+}
+#popular {
+	background: #fff;
+	border-top: 1px solid #d0d5cb;
+	overflow: hidden;
+	padding: 80px 0;
+}
+#popular h2 {
+	background: url(img/popular.gif) center left no-repeat;
+} 
+#popular h3 {
+	font-size: 12px;
+	line-height: 15px;
+	margin: 5px 0;
+	padding: 0 5px;
+}
+#popular h3 strong {
+	color: #0b1902;
+	display: block;
+}
+#popular p {
+	font-size: 12px;
+	line-height: 15px;
+	padding: 0 5px;
+}
+#popular .project {
+	background: rgba(11, 25, 2, .06);
+	border-radius: 9px;
+	float: left;
+	padding: 4px;
+	width: 212px;
+}
+#popular .project + .project {
+	margin-left: 20px;
+}
+#popular .card {
+	background: #fff;
+	border-radius: 5px;
+	border: 1px solid #d0d5cb;
+	color: #75796f;
+	height: 360px;
+	padding: 5px;
+	position: relative;
+}
+#popular .progress {
+	margin-bottom: 6px;
+}
+#popular .stats {
+	bottom: 0;
+	padding: 0 5px 10px;
+	position: absolute;
+	width: 190px;
+}
+#popular .stats li {
+	float: left;
+	font-size: 10px;
+	text-transform: uppercase;
+}
+#popular .stats li + li {
+	margin-left: 10px;
+}
+#popular .stats strong {
+	color: #0b1902;
+	display: block;
+	font-size: 12px;
+}
+#popular h2,
+#curated-pages h2 {
+	font-weight: bold;
+	margin-bottom: 30px;
+	padding-left: 37px;
+}
+#popular .more,
+#curated-pages .more {
+	color: #0b1902;
+	float: right;
+	margin-top: -54px;
+}
+#curated-pages {
+	background: #fff;
+	border-top: 1px solid #d0d5cb;
+	overflow: hidden;
+	padding: 80px 0;
+}
+#curated-pages h2 {
+	background: url(img/star.gif) center left no-repeat;
+}
+#curated-pages .pages li {
+	border: 1px solid #d0d5cb;
+	float: left;
+}
+#curated-pages .pages li + li {
+	margin-left: 20px;
+}
+#curated-pages .pages img {
+	display: block;
 }
 #footer {
 	color: #fff;
