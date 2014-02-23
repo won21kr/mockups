@@ -1,3 +1,10 @@
+@font-face {
+	font-family: "kickstarter";
+	font-weight: normal;
+	src: url("fonts/kickstarter.woff")
+		format("woff");
+}
+
 body {
 	background: #0b1902;
 	color: #000;
@@ -13,6 +20,7 @@ img {
 	border: none;
 }
 p {
+	line-height: 1.4em;
 	margin: 0;
 }
 p + p {
@@ -56,7 +64,9 @@ li {
 }
 #header .logo {
 	float: left;
-	font-size: 24px;
+	font: 24px kickstarter, sans-serif;
+	margin-left: 10px;
+	text-rendering: optimizeLegibility;
 }
 #header .logo span {
 	color: #76cc1e;
@@ -93,61 +103,131 @@ li {
 	float: right;
 }
 #splash {
-	background: url(img/splash.jpg) center center no-repeat;
-	background-size: cover;
+	background: #02c6a0 url(img/splash.png) center center no-repeat;
 	color: #fff;
 	height: 540px;
 	overflow: hidden;
 }
-#splash h1,
-#splash h3 {
-	text-align: center;
-}
-#splash h1 {
-	font-size: 112px;
-}
-#splash h3 {
-	font-size: 22px;
-	margin-top: 160px;
-}
 #staff-picks {
 	background: #fff;
-	padding: 20px 0 30px;
+	padding: 20px 0 25px;
 }
 #staff-picks h2 {
+	position: absolute;
+}
+#staff-picks h2,
+#staff-picks h3 {
 	font-size: 22px;
 	font-weight: bold;
-	margin: 20px 0 30px 0;
+	margin: 18px 0 30px 0;
 }
 #staff-picks h3 {
+	padding-left: 125px;
+}
+#staff-picks h4 {
 	font-size: 16px;
 	font-weight: bold;
+	margin-bottom: 8px;
+}
+#staff-picks .heading {
+	position: absolute;
 }
 #staff-picks .projects {
 	float: left;
 	margin-right: 20px;
 	width: 700px;
 }
-#staff-picks .projects img {
+#staff-picks .project img {
 	float: left;
 	margin-right: 20px;
+}
+#staff-picks .project .more {
+	color: #0b1902;
+	float: right;
+	margin-top: -50px;
+	margin-right: 10px;
+}
+#staff-picks .details {
+	float: left;
+	min-height: 250px;
+	position: relative;
+	width: 330px;
+}
+#staff-picks .details .description {
+	margin-top: 1.2em;
+}
+#staff-picks .stats {
+	position: absolute;
+	bottom: 0;
+}
+#staff-picks .progress {
+	background: #d0d5cb;
+	border-radius: 4px;
+	height: 8px;
+	margin-bottom: 15px;
+	width: 330px;
+}
+#staff-picks .progress .done {
+	background: #76cc1e;
+	border-radius: 4px;
+	height: 8px;
+}
+#staff-picks .project-stats li {
+	color: #75796f;
+	float: left;
+	font-size: 12px;
+	padding: 2px 15px;
+}
+#staff-picks .project-stats li:first-child {
+	padding-left: 0;
+}
+#staff-picks .project-stats li + li {
+	border-left: 1px solid #d0d5cb;
+}
+#staff-picks .project-stats strong {
+	color: #0b1902;
+	display: block;
+	font-size: 16px;
 }
 #staff-picks .categories {
 	float: left;
 	line-height: 25px;
-	margin-top: -62px;
+	width: 220px;
+}
+#staff-picks .categories ul {
+	border-left: 1px solid #d0d5cb;
+	padding: 10px 0;
+}
+#staff-picks .categories li {
+	border-left: 3px solid transparent;
+	line-height: 25px;
+	margin-left: -1px;
 	padding-left: 20px;
-	width: 200px;
+}
+#staff-picks .categories li:first-child {
+	border-left-color: #76cc1e;
+}
+#staff-picks .categories a {
+	border-bottom: 1px solid transparent;
+	color: #0b1902;
+	padding-bottom: 1px;
+}
+#staff-picks .categories a:hover,
+#staff-picks .categories .selected {
+	border-bottom-color: #76cc1e;
+	color: #76cc1e; 
 }
 #footer {
 	color: #fff;
 }
+#footer hr {
+	border: 0;
+	border-top: 1px dashed #76cc1e;
+	margin: 0;
+}
 #footer .column {
 	float: left;
 	width: 220px;
-}
-#footer .column.double {
-	width: 460px;
 }
 #footer .column + .column {
 	margin-left: 20px;
@@ -155,6 +235,34 @@ li {
 #footer .learn-more {
 	background: url(img/footer.jpg);
 	height: 249px;
+	overflow: hidden;
+}
+#footer .learn-more h2 {
+	color: #fff;
+	font-size: 32px;
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+#footer .learn-more p {
+	color: #121a0d;
+	font-size: 16px;
+	line-height: 24px;
+}
+#footer .learn-more a {
+	border-bottom: 1px solid #fff;
+	color: #fff;
+	padding-bottom: 3px;
+}
+#footer .learn-more .wrap {
+	background: #85c443;
+	background: rgba(133, 196, 67, .9);
+	margin-top: 45px;
+	padding: 30px;
+	width: 880px;
+}
+#footer .scissor {
+	position: absolute;
+	margin-top: -9px;
 }
 #footer .links {
 	overflow: hidden;
@@ -171,4 +279,23 @@ li {
 #footer .links .double ul {
 	float: left;
 	width: 110px;
+}
+#footer .copyright {
+	border-top: 1px solid #75796f;
+	overflow: hidden;
+	padding: 40px 0;
+}
+#footer .copyright .logo {
+	color: #75796f;
+	float: left;
+	font: 24px kickstarter, sans-serif;
+	margin-top: -5px;
+	text-rendering: optimizeLegibility;
+}
+#footer .copyright .logo:hover {
+	color: #76cc1e;
+}
+#footer .copyright .text {
+	color: #75796f;
+	float: right;
 }
