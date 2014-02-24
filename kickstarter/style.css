@@ -113,10 +113,36 @@ li {
 	float: right;
 }
 #splash {
-	background: #02c6a0 url(img/splash.png) center center no-repeat;
+	background: #02c6a0 url(img/splash.png) center 75px no-repeat;
 	color: #fff;
 	height: 540px;
 	overflow: hidden;
+	position: relative;
+}
+#splash .footer {
+	bottom: 0;
+	font-size: 16px;
+	height: 80px;
+	line-height: 80px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+#splash .button {
+	background: #eef2ea;
+	border-radius: 6px;
+	color: #0b1902;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: bold;
+	height: 40px;
+	line-height: 40px;
+	margin-left: 20px;
+	padding: 0 20px;
+	transition: background .2s;
+}
+#splash .button:hover {
+	background: #d0d5cb;
 }
 #staff-picks {
 	background: #fff;
@@ -228,7 +254,7 @@ li {
 	color: #76cc1e; 
 }
 #popular {
-	background: #fff;
+	background: #eef2ea;
 	border-top: 1px solid #d0d5cb;
 	overflow: hidden;
 	padding: 80px 0;
@@ -245,6 +271,7 @@ li {
 #popular h3 strong {
 	color: #0b1902;
 	display: block;
+	margin-bottom: 2px;
 }
 #popular p {
 	font-size: 12px;
@@ -266,7 +293,7 @@ li {
 	border-radius: 5px;
 	border: 1px solid #d0d5cb;
 	color: #75796f;
-	height: 360px;
+	height: 340px;
 	padding: 5px;
 	position: relative;
 }
@@ -313,9 +340,13 @@ li {
 #curated-pages h2 {
 	background: url(img/star.gif) center left no-repeat;
 }
+#curated-pages .pages a:hover img {
+	opacity: .9;
+}
 #curated-pages .pages li {
-	border: 1px solid #d0d5cb;
+	outline: 1px solid #d0d5cb;
 	float: left;
+	margin-bottom: 1px;
 }
 #curated-pages .pages li + li {
 	margin-left: 20px;
