@@ -1,0 +1,140 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+body {
+	font: 17px Arial, sans-serif;
+	padding-left: 240px;
+}
+a:hover {
+	text-decoration: none;
+}
+ul,
+li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+h1,
+h2,
+h3 {
+	font-family: Lato, Arial, sans-serif;
+	margin: 0;
+}
+h2 {
+	color: #888;
+	font-size: 26px;
+	line-height: 1.5;
+}
+.button {
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	color: #aaa;
+	display: inline-block;
+	font: bold 12px Lato, sans-serif;
+	letter-spacing: 1px;
+	padding: 7px 18px;
+	text-transform: uppercase;
+	transition: all .1s;
+	word-spacing: 3px;
+}
+.button:hover {
+	border-color: #ccc;
+	background: #ccc;
+	color: #fff;
+}
+.button.green {
+	border-color: #7ed321;
+	color: #7ed321;
+}
+.button.green:hover {
+	background: #7ed321;
+	color: #fff;
+}
+.button.blue {
+	border-color: #60c4ff;
+	color: #60c4ff;
+}
+.button.blue:hover {
+	background: #60c4ff;
+	color: #fff;
+}
+.button + .button {
+	margin-left: 10px;
+}
+#sidebar {
+	background: #1e2229;
+	bottom: 0;
+	left: 0;
+	line-height: 1.4em;
+	padding: 65px 70px;
+	position: fixed;
+	top: 0;
+	width: 240px;
+}
+#sidebar a {
+	clear: both;
+	color: #7c838d;
+	float: left;
+	font-size: 14px;
+	text-decoration: none;
+	transition: all .2s;
+}
+#sidebar a.active,
+#sidebar a:hover {
+	color: #fff;
+}
+#sidebar section {
+	margin-bottom: 25px;
+	overflow: hidden;
+}
+#sidebar .headline {
+	color: #84d1ff;
+	font-size: 15px;
+	font-weight: bold;
+}
+#sidebar .links {
+	clear: both;
+	padding-top: 5px;
+	overflow: hidden;
+}
+#main {
+	position: relative;
+	text-align: center;
+}
+#wrap {
+	max-width: 100%;
+}
+#header {
+	padding-top: 70px;
+	margin: 0 auto;
+	max-width: 680px;
+}
+#header h1 {
+	color: #60c4ff;
+	font-size: 15px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+#header h2 {
+	color: #222;
+	font-size: 54px;
+	font-weight: 300;
+	margin-bottom: 30px;
+}
+#header h3 {
+	color: #888;
+	font-size: 26px;
+	font-weight: 300;
+	line-height: 1.5;
+	margin-bottom: 40px;
+}
+#header .links {
+	margin-top: 40px;
+	text-transform: uppercase;
+}
+#header .links a {
+	color: #bec5d0;
+	font: 12px Lato, sans-serif;
+	word-spacing: 2px;
+}
