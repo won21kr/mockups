@@ -12,11 +12,29 @@ body {
 	font: 13px Roboto, sans-serif;
 	position: relative;
 	margin: 0;
+	min-width: 1000px;
 }
 a,
 a:hover,
 a:focus {
 	color: inherit;
+	text-decoration: none;
+}
+.float-right {
+	float: right;
+}
+.btn {
+	border-radius: 2px;
+	display: inline-block;
+	padding: 7px 12px;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 11px;
+}
+.btn-red {
+	background: #d14836;
+	color: #fff;
 }
 #header {
 	height: 114px; 
@@ -28,12 +46,115 @@ a:focus {
 	position: relative;
 	z-index: 3;
 }
+#header .main .right {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 200px;
+}
+#header .main .logo {
+	margin: 9px 0 0 30px;
+}
+#header .search {
+	padding-top: 15px;	
+	position: absolute;
+	left: 0;
+	right: 300px;
+}
+#header .search input[name=search] {
+	border: 1px solid #cdcdcd;
+	font: 16px Arial, sans-serif;
+	line-height: 28px;
+	padding: 0 7px;
+	width: 100%;
+}
+#header .search button {
+	background: #4285f4;
+	border: 0;
+	border-radius: 0 2px 2px 0;
+	padding: 0 15px;
+	position: absolute;
+	right: 0;
+	height: 30px;
+}
+#header .search button .icon {
+	display: inline-block;
+	background-image: url(../img/sprite.png);
+	background-position: -69px -1623px;
+	width: 30px;
+	height: 30px;
+}
+#header .meta {
+	position: absolute;
+	right: 0;
+	padding-right: 29px;
+}
+#header .meta .google-plus {
+	font-family: Arial, sans-serif;
+	float: left;
+	margin: 22px 20px 0 40px;
+}
+#header .meta .icons {
+	margin-top: 14px;
+	float: left;
+}
+#header .meta .icons a,
+#header .meta .icons div {
+	float: left;
+}
+#header .meta .avatar {
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	overflow: hidden;
+}
 #header .secondary {
 	background: #fafafa;
 	box-shadow: 0 0 6px rgba(0, 0, 0, .5);
 	height: 54px;
 	position: relative;
 	z-index: 2;
+}
+#header .secondary .logo {
+	float: left;	
+	margin: 16px 14px 0 10px;
+}
+#header .secondary .left ,
+#header .secondary .right {
+	color: #555;
+	font-size: 20px;
+	line-height: 54px;
+	padding-left: 20px;
+}
+#header .secondary .right {
+	color: #555;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 200px;
+	right: 0;
+	font-size: 16px;
+}
+#header .secondary .parent {
+	float: left;
+}
+#header .secondary .parent + svg {
+	float: left;
+	margin: 17px 6px 0;
+}
+#header .secondary .child-folder {
+	font-weight: bold;
+}
+#settings {
+	border-left: 1px solid #ddd;
+	padding: 4px 18px 0 10px;
+	height: 54px;
+	opacity: .5;
+}
+#settings a {
+	display: inline-block;
+	margin: 0 12px;
 }
 #body {
 	position: absolute;
@@ -47,7 +168,50 @@ a:focus {
 	position: absolute;
 	top: 0;
 	bottom: 0;
-	width: 203px;
+	width: 200px;
+	padding: 26px 30px;
+}
+#sidebar ul,
+#sidebar li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#sidebar ul {
+	margin-top: 12px;
+}
+#sidebar li {
+	border-left: 4px solid transparent;
+	height: 40px;
+	line-height: 40px;
+	margin: 0 -30px;
+	padding-left: 26px;
+}
+#sidebar li:hover {
+	background: #e1e1e1;
+	border-left-color: #666;
+	cursor: pointer;
+}
+#sidebar li svg {
+	float: left;
+	margin: 10px 14px 0 0;
+}
+#sidebar li svg path,
+#sidebar li svg polygon {
+	fill: #777;
+}
+#sidebar .btn {
+	color: #fff;
+	min-width: 115px;
+}
+#sidebar .active {
+	color: #c53929;
+	border-left-color: #c53929 !important;
+	font-weight: bold;
+}
+#sidebar .active svg path,
+#sidebar .active svg polygon {
+	fill: #c53929;
 }
 #footer {
 	color: #656565;
@@ -60,6 +224,7 @@ a:focus {
 	position: absolute;
 	bottom: 0;
 	max-width: 140px;
+	left: 0;
 }
 #footer a {
 	color: #15c;
@@ -68,8 +233,47 @@ a:focus {
 #content {
 	background: #fff;
 	position: absolute;
-	left: 203px;
+	left: 200px;
 	top: 0;
 	bottom: 0;
 	right: 0;
+}
+#files {
+	width: 100%;
+}
+#files td,
+#files th {
+	text-align: left;
+	height: 48px;
+	line-height: 48px;
+}
+#files td:first-child,
+#files th:first-child {
+	padding-left: 20px;
+}
+#files th {
+	background: #fafafa;
+	border-bottom: 1px solid #eee;
+	color: #555;
+	font-weight: normal;
+}
+#files th:first-child {
+	font-weight: bold;
+	padding-top: 1px;
+}
+#files svg {
+	float: left;
+	margin: 17px 0 0 -40px;
+}
+#files .file {
+	border-bottom: 1px solid #eee;
+}
+#files .file td:first-child {
+	padding-left: 64px;
+}
+#files .spreadsheet {
+	background: url(../img/spreadsheet.png) 24px 17px no-repeat;
+}
+#files .document {
+	background: url(../img/document.png) 24px 17px no-repeat;
 }
