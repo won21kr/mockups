@@ -1,8 +1,13 @@
+# mockups
+
 Here are some of the mockups I've been doing in my spare time to keep my  
 HTML5/CSS3 knowledge up to date.
 
-### Preview
+- [x] [Etsy](http://erming.github.io/mockups/etsy/)
+- [x] [Kickstarter](http://erming.github.io/mockups/kickstarter/)
+- [x] [Framer](http://erming.github.io/mockups/framer/)
+- [x] [Google Drive](http://erming.github.io/mockups/google-drive/)
 
-* [Etsy](http://erming.github.io/mockups/etsy/)
-* [Kickstarter](http://erming.github.io/mockups/kickstarter/)
-* [Framer](http://erming.github.io/mockups/framer/)
+## License
+
+Available under [the MIT license](http://mths.be/mit).
